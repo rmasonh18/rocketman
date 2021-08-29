@@ -1,0 +1,37 @@
+<!--
+ Project: Jacqueline Taylor & Friends
+
+ Created on Sun Aug 29 2021
+
+ Filename: header.html
+
+ Copyright (c) 2021 Bujisoft
+-->
+
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary >
+  <div class="container">
+    <a class="navbar-brand" href="/">
+        <!-- find logo that will properly resize for various screens -->
+        <img src ="{% static 'images/logo10.png' %}" >
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+
+        {% for i in "123" %}
+        
+            <li class="nav-item active">
+              <a class="nav-link" href="@todo">
+               Link {{ i }}
+              </a>
+            </li>
+            {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
