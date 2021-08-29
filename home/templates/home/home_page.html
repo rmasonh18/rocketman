@@ -10,7 +10,7 @@
   style='background: linear-gradient(180.43deg,
    rgba(9, 31, 235, 0.6) 0%,
     rgba(82, 65, 236, 0.8) 100%), 
-      url();' >
+      url({{ bg_img.url }});' >
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-lg-9">
@@ -31,14 +31,14 @@
     </div>
   </div>
   
-  <h1>Tutor Link</h1>
+  {% comment %} <h1>Tutor Link</h1>
   <p><script type='text/javascript' src='https://app.tutorbird.com/Widget/v2/Login.ashx'></script></p>
   <h2>REGISTER</h2>
   <p>
     <script type='text/javascript' src='https://app.tutorbird.com/Widget/v3/Registration.ashx?id=sch_tT5JF' class='sb_registration'></script>
   </p>
  
-
+ {% endcomment %}
   {% endblock content %}
 
     
